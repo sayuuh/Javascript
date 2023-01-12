@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Post</title>
+</head>
+<body id="post">
+    <header>
+        <a href="index.html">Fórum</a>
+    </header>
+    <div class="loading">
+        <h2>Carregando Posts</h2>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <main class="hiden">
+        <article>
+
+        </article>
+
+        <section class="content-comment">
+            <form method="post" onsubmit="toComment(event)">
+                <legend>Comentar</legend>
+                <label>
+                    <input type="text" name="name" placeholder="userName" required>
+                </label>
+                <br>
+                <label>
+                    <input type="email" name="email" placeholder="e-mail" required>
+                </label>
+                <br>
+                <textarea name="message" placeholder="comentário" required></textarea>
+                <br>
+                <input type="submit" name="Comentar">
+            </form>
+        </section>
+
+        <div class="c-loader"></div>
+        <section class="content-comments hiden">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Coded and maintained by 
+            <a href="https://github.com/gkaustchr" 
+            target="_blank">gkaustchr</a> 
+            © 2022
+        </p>
+    </footer>
+    
+
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
